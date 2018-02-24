@@ -11,7 +11,6 @@ import android.support.v4.app.FragmentManager;
 import dagger.android.AndroidInjection;
 import dagger.android.support.AndroidSupportInjection;
 import dagger.android.support.HasSupportFragmentInjector;
-import model.myview.com.myviewmodel.DaggerApplicationComponent;
 import model.myview.com.myviewmodel.MyApplication;
 
 /**
