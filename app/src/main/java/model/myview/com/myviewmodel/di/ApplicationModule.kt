@@ -10,7 +10,8 @@ import javax.inject.Singleton
  * Created by tskim on 2018. 1. 19..
  */
 @Module(includes = arrayOf(
-        MainActivityModule::class
+        MainActivityModule::class,
+        ViewModelModule::class
 ))
 class ApplicationModule {
     @Provides

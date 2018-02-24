@@ -26,6 +26,7 @@ public final class AppInjector {
                 .application(application)
                 .build()
                 .inject(application);
+
         application
                 .registerActivityLifecycleCallbacks(new Application.ActivityLifecycleCallbacks() {
                     @Override

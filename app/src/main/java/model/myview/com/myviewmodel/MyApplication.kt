@@ -11,7 +11,7 @@ import javax.inject.Inject
 /**
  * Created by tskim on 2018. 2. 24..
  */
-class MyApplication : Application(), HasActivityInjector {
+open class MyApplication : Application(), HasActivityInjector {
     override fun onCreate() {
         super.onCreate()
         AppInjector.init(this)
