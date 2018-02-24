@@ -7,4 +7,5 @@ import android.arch.lifecycle.ViewModel
  */
 class MyViewModel : ViewModel() {
 
+    val c = CountObservable()
 }
