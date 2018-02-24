@@ -19,7 +19,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-     dataBinding {
+    dataBinding {
         enabled = true
     }
 }
@@ -38,5 +38,15 @@ dependencies {
     kapt androidArchDeps.archRoomCompiler
     implementation androidArchDeps.archRuntime
     implementation androidArchDeps.archExtensions
+
+
+    implementation daggerDeps.dagger
+    implementation daggerDeps.daggerSupport
+    kapt daggerDeps.daggerCompiler
+    kapt daggerDeps.daggerProcessor
+    compileOnly daggerDeps.javaxAnnotation
+
+    testImplementation testDeps.robolectric
+    testImplementation testDeps.robolectricSupport
 
 }
